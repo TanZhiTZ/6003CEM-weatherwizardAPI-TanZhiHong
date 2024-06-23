@@ -75,6 +75,7 @@ const HomePage = () => {
       setError('Could not fetch weather data');
       setWeather(null);
       setShowRecommendations(false);
+      console.error('Error fetching weather:', error);
     }
   };
 

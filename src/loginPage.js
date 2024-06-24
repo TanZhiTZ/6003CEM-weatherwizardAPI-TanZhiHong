@@ -32,7 +32,7 @@ const RegistrationForm = () => {
       navigate('/home', { state: { userEmail: email, userCountry: country } });
     } catch (error) {
       const errorMessage = error.response ? error.response.data : error.message;
-      alert(`Registration failed: ${errorMessage}`);
+      alert(`Registration failed!`);
       console.error('Error registering user:', error);
       // Handle error, e.g., show error message to user
     }
